@@ -4,7 +4,7 @@ const Express = require('express');
 const Aplicativo = new Express();
 
 Aplicativo.use(Express.json());
-
+// teste de pull request
 Aplicativo.get('/', (RequisicaoCliente, RespostaServidor) => RespostaServidor.send('API Ok!'));
 
 Aplicativo.get('/post', (RequisicaoCliente, RespostaServidor) => RespostaServidor.json());
